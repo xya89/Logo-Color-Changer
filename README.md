@@ -1,48 +1,57 @@
-🎨 PNG Color Replacer (Streamlit App)
-This web app allows you to replace a specific color in a .png image with a new color, using hex codes. It’s built with Python and Streamlit for a quick, interactive UI.
+# 🎨 PNG Color Replacer Streamlit App
 
-Features
-Upload a .png file
+[🔗 Try it Live on Streamlit](https://logo-color-changer-tdfg.streamlit.app/)
 
-Select a color in the image to replace (using a color picker)
+This web app allows you to replace a specific color in a `.png` image with a new color, using hex codes. It’s built with **Python** and **Streamlit** to provide a quick, interactive UI.
 
-Select the replacement color (using another color picker)
+---
 
-Preview the updated image
+## ✨ Features
 
-Download the modified image directly
+- 📂 Upload a `.png` file  
+- 🎯 Select a color in the image to replace (with a color picker)  
+- 🎨 Select a replacement color (with a second color picker)  
+- 👁️ Preview the updated image instantly  
+- 💾 Download the modified image directly  
 
-🖥️ Technologies
-Python 
+---
 
-Streamlit 
+## 🖥️ Technologies Used
 
-Pillow (PIL) 
+- [Python](https://www.python.org/)  
+- [Streamlit](https://streamlit.io/)  
+- [Pillow (PIL)](https://python-pillow.org/)  
 
-How to Run Locally
-Clone this repo:
+---
 
+## 🚀 How to Run Locally
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/your-username/png-color-replacer.git
 cd png-color-replacer
-Install dependencies:
+```
 
-
+### 2. Install Dependencies
+```bash
 pip install streamlit pillow
-Run the app:
+```
 
-
+### 3. Run the Streamlit app
+```bash
 streamlit run app.py
+```
+## 📌 Notes
+-Only exact color matches (including the alpha channel) will be replaced.
+-The match is based on RGBA values, so even slight differences in transparency or shade won’t be detected unless matched precisely.
 
-Notes
-Only exact color matches will be replaced (including alpha).
+## 📁 File Structure
+```bash
+png-color-replacer/
+├── app.py         # Main Streamlit app
+└── README.md      # This file
+```
 
-The color match is case-sensitive to RGBA values. Slight variations won’t be picked up unless manually matched.
-
-File Structure
-
-app.py         # Main Streamlit app
-README.md      # This file
-
-License
-MIT License — feel free to use, modify, and share.
-
+## 📄 License
+This project is licensed under the MIT License — feel free to use, modify, and share!
